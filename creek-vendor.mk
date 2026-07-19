@@ -2469,7 +2469,6 @@ PRODUCT_PACKAGES += \
     PowerOffAlarm \
     android.hardware.atrace@1.0-service.xml \
     android.hardware.biometrics.fingerprint@2.1-service.xml \
-    android.hardware.drm-service.clearkey.xml \
     android.hardware.gnss-aidl-service-qti.xml \
     android.hardware.graphics.mapper-impl-qti-display.xml \
     android.hardware.health-service.qti.xml \
@@ -2485,8 +2484,6 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti.xml \
     android.hardware.usb.gadget@1.1-service.xml \
     android.hardware.usb@1.2-service.xml \
-    android.hardware.wifi.hostapd.xml \
-    android.hardware.wifi.supplicant.xml \
     android.hardware.wifi@1.0-service.xml \
     manifest_android.hardware.drm-service.widevine.xml \
     vendor.qti.gnss-service.xml \
