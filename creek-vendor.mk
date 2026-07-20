@@ -2192,7 +2192,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer-service.xml \
     vendor.qti.hardware.limits-service.xml \
     vendor.qti.hardware.perf.xml \
-    vendor.qti.hardware.radio.am.xml \
     vendor.qti.hardware.radio.ims.xml \
     vendor.qti.hardware.radio.qtiradioconfig.xml \
     vendor.qti.hardware.servicetracker@1.2-service.xml \
