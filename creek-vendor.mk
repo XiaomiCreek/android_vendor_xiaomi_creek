@@ -1151,6 +1151,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/firmware/scuba_ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/scuba_ipa_fws.b04 \
     vendor/xiaomi/creek/proprietary/vendor/firmware/scuba_ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/scuba_ipa_fws.elf \
     vendor/xiaomi/creek/proprietary/vendor/firmware/scuba_ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/scuba_ipa_fws.mdt \
+    vendor/xiaomi/creek/proprietary/vendor/firmware/sipa.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sipa.bin \
     vendor/xiaomi/creek/proprietary/vendor/firmware/venus.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.mbn \
     vendor/xiaomi/creek/proprietary/vendor/firmware/venus_4mb.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_4mb.mbn \
     vendor/xiaomi/creek/proprietary/vendor/firmware/venus_4mb_ecdsa.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/venus_4mb_ecdsa.mbn \
@@ -1980,6 +1981,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminkdescriptor.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libminksocket_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminksocket_vendor.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libmiracast.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiracast.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/libmisight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmisight.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libmmcamera_cac3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_cac3.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libmmcamera_lscv35.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_lscv35.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libmmcamera_mfnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmcamera_mfnr.so \
@@ -2085,6 +2087,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libsl_fp_impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsl_fp_impl.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libsnapdragoncolor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnapdragoncolor.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_fastRPC_util.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsapi.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsdiaglog.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libsoc_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsoc_helper.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libspl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspl.so \
@@ -2223,6 +2226,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.qti.hardware.limits@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.limits@1.2.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.mwqemadapter@1.0.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.pal@1.0-impl.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.0.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.2.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qseecom@1.0.so \
