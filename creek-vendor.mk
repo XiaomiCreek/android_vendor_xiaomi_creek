@@ -30,10 +30,16 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/odm/etc/thermal-video.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-video.conf \
     vendor/xiaomi/creek/proprietary/odm/etc/thermal-videochat.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-videochat.conf \
     vendor/xiaomi/creek/proprietary/odm/etc/thermal-yuanshen.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-yuanshen.conf \
+    vendor/xiaomi/creek/proprietary/odm/firmware/hdl_firmware_test.img:$(TARGET_COPY_OUT_ODM)/firmware/hdl_firmware_test.img \
+    vendor/xiaomi/creek/proprietary/odm/firmware/hdl_firmware_test_erp.img:$(TARGET_COPY_OUT_ODM)/firmware/hdl_firmware_test_erp.img \
     vendor/xiaomi/creek/proprietary/odm/firmware/novatek_ts_fw_csot.bin:$(TARGET_COPY_OUT_ODM)/firmware/novatek_ts_fw_csot.bin \
     vendor/xiaomi/creek/proprietary/odm/firmware/novatek_ts_fw_csot_erp.bin:$(TARGET_COPY_OUT_ODM)/firmware/novatek_ts_fw_csot_erp.bin \
     vendor/xiaomi/creek/proprietary/odm/firmware/novatek_ts_mp_csot.bin:$(TARGET_COPY_OUT_ODM)/firmware/novatek_ts_mp_csot.bin \
     vendor/xiaomi/creek/proprietary/odm/firmware/novatek_ts_mp_csot_erp.bin:$(TARGET_COPY_OUT_ODM)/firmware/novatek_ts_mp_csot_erp.bin \
+    vendor/xiaomi/creek/proprietary/odm/firmware/omnivision_hdl_firmware.img:$(TARGET_COPY_OUT_ODM)/firmware/omnivision_hdl_firmware.img \
+    vendor/xiaomi/creek/proprietary/odm/firmware/omnivision_hdl_firmware_erp.img:$(TARGET_COPY_OUT_ODM)/firmware/omnivision_hdl_firmware_erp.img \
+    vendor/xiaomi/creek/proprietary/product/etc/displayconfig/display_id_4630946387282449025.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_id_4630946387282449025.xml \
+    vendor/xiaomi/creek/proprietary/product/etc/displayconfig/display_id_4630946427073658497.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/displayconfig/display_id_4630946427073658497.xml \
     vendor/xiaomi/creek/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
     vendor/xiaomi/creek/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
     vendor/xiaomi/creek/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
@@ -112,6 +118,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/system_ext/lib64/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmparser_lite.so \
     vendor/xiaomi/creek/proprietary/system_ext/lib64/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpdecoder.so \
     vendor/xiaomi/creek/proprietary/system_ext/lib64/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpencoder.so \
+    vendor/xiaomi/creek/proprietary/system_ext/lib64/libprotobuf-cpp-full-fromvendor.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libprotobuf-cpp-full-fromvendor.so \
+    vendor/xiaomi/creek/proprietary/system_ext/lib64/libprotobuf-cpp-lite-fromvendor.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libprotobuf-cpp-lite-fromvendor.so \
     vendor/xiaomi/creek/proprietary/system_ext/lib64/libqcc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqcc.so \
     vendor/xiaomi/creek/proprietary/system_ext/lib64/libqcc_file_agent_sys.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqcc_file_agent_sys.so \
     vendor/xiaomi/creek/proprietary/system_ext/lib64/libqcc_netstats.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqcc_netstats.so \
@@ -293,6 +301,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/bin/hw/android.hardware.thermal@2.0-service.qti-v2:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal@2.0-service.qti-v2 \
     vendor/xiaomi/creek/proprietary/vendor/bin/hw/qcrilNrd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrilNrd \
     vendor/xiaomi/creek/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
+    vendor/xiaomi/creek/proprietary/vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.dolby.hardware.dms@2.0-service \
     vendor/xiaomi/creek/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/xiaomi/creek/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
     vendor/xiaomi/creek/proprietary/vendor/bin/hw/vendor.qti.hardware.display.composer-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.display.composer-service \
@@ -390,8 +399,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
     vendor/xiaomi/creek/proprietary/vendor/etc/audio_diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio_diag.cfg \
     vendor/xiaomi/creek/proprietary/vendor/etc/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
-    vendor/xiaomi/creek/proprietary/vendor/etc/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
-    vendor/xiaomi/creek/proprietary/vendor/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
     vendor/xiaomi/creek/proprietary/vendor/etc/audio_policy_engine_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_configuration.xml \
     vendor/xiaomi/creek/proprietary/vendor/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_default_stream_volumes.xml \
     vendor/xiaomi/creek/proprietary/vendor/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_product_strategies.xml \
@@ -700,6 +707,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/xiaomi/creek/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
     vendor/xiaomi/creek/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
+    vendor/xiaomi/creek/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/xiaomi/creek/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
     vendor/xiaomi/creek/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/xiaomi/creek/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
@@ -745,6 +753,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/xiaomi/creek/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/xiaomi/creek/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
+    vendor/xiaomi/creek/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
     vendor/xiaomi/creek/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/xiaomi/creek/proprietary/vendor/etc/init/vendor.qsap.qapeservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.qapeservice.rc \
     vendor/xiaomi/creek/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
@@ -975,6 +984,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/etc/sensors/config/sns_wrist_pedo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_wrist_pedo.json \
     vendor/xiaomi/creek/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/xiaomi/creek/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
+    vendor/xiaomi/creek/proprietary/vendor/etc/sixth_param/sixth_param_boost0.txt:$(TARGET_COPY_OUT_VENDOR)/etc/sixth_param/sixth_param_boost0.txt \
+    vendor/xiaomi/creek/proprietary/vendor/etc/sixth_param/sixth_param_boost1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/sixth_param/sixth_param_boost1.txt \
+    vendor/xiaomi/creek/proprietary/vendor/etc/sixth_param/sixth_param_boost2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/sixth_param/sixth_param_boost2.txt \
+    vendor/xiaomi/creek/proprietary/vendor/etc/sixth_wrapper_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sixth_wrapper_cfg.xml \
     vendor/xiaomi/creek/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/xiaomi/creek/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/xiaomi/creek/proprietary/vendor/etc/telephony_packages.xml:$(TARGET_COPY_OUT_VENDOR)/etc/telephony_packages.xml \
@@ -1067,21 +1080,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
     vendor/xiaomi/creek/proprietary/vendor/lib/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsp_default_listener.so \
     vendor/xiaomi/creek/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib/libcodec2_hidl@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl@1.0.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib/libcodec2_hidl_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl_plugin.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib/libcodec2_vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_vndk.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib/libdapparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdapparamstorage.so \
     vendor/xiaomi/creek/proprietary/vendor/lib/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayqos.so \
     vendor/xiaomi/creek/proprietary/vendor/lib/libdisplayskuutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayskuutils.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib/libqcodec2_base.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_base.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib/libqcodec2_basecodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_basecodec.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib/libqcodec2_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_core.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib/libqcodec2_filterbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_filterbase.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib/libqcodec2_hooks.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_hooks.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib/libqcodec2_mockfilter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_mockfilter.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib/libqcodec2_mockqc2filter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_mockqc2filter.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib/libqcodec2_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_platform.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib/libqcodec2_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_utils.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib/libqcodec2_v4l2codec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2_v4l2codec.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib/libdlbpreg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdlbpreg.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib/libpiex.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpiex.so \
     vendor/xiaomi/creek/proprietary/vendor/lib/rfsa/adsp/libSnpeHtpV68Skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libSnpeHtpV68Skel.so \
     vendor/xiaomi/creek/proprietary/vendor/lib/rfsa/adsp/libSnpeHtpV69Skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libSnpeHtpV69Skel.so \
     vendor/xiaomi/creek/proprietary/vendor/lib/rfsa/adsp/libadsp_jpege_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libadsp_jpege_skel.so \
@@ -1102,10 +1105,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/lib/rfsa/adsp/misound_karaokemix_res.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_karaokemix_res.bin \
     vendor/xiaomi/creek/proprietary/vendor/lib/rfsa/adsp/misound_res_headphone.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_res_headphone.bin \
     vendor/xiaomi/creek/proprietary/vendor/lib/rfsa/adsp/misound_res_spk.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_res_spk.bin \
-    vendor/xiaomi/creek/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib/soundfx/libqcompostprocbundle.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcompostprocbundle.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib/soundfx/libqcomvisualizer.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcomvisualizer.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libvolumelistener.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib/soundfx/libdlbvol.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdlbvol.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib/soundfx/libhwdap.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libhwdap.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib/soundfx/libswgamedap.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libswgamedap.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib/soundfx/libswvqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libswvqe.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.dolby.hardware.dms@2.0.so \
     vendor/xiaomi/creek/proprietary/vendor/lib/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.dsp@1.0.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/android.hardware.media.c2@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/android.hardware.media.c2@1.0.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/btaudio_offload_if.so \
@@ -1258,9 +1262,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/lib64/lib-rtpcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rtpcore.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/lib-rtpsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rtpsl.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCB.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib64/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libEGL_adreno.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libEvrcSwCodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libEvrcSwCodec.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib64/libGLESv2_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGLESv2_adreno.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libGPMTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPMTEEC_vendor.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPQTEEC_vendor.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPTEE_vendor.so \
@@ -1289,11 +1291,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_utils.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsp_default_listener.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsprpc.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/libagm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libagm.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libagm_compress_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libagm_compress_plugin.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libagm_mixer_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libagm_mixer_plugin.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libagm_pcm_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libagm_pcm_plugin.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libagmclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libagmclient.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libagmmixer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libagmmixer.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/libaidenoiser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaidenoiser.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalsautils.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libanc_night.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libanc_night.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libanc_single_rt_bokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libanc_single_rt_bokeh.so \
@@ -1301,6 +1305,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libappclassifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libappclassifier.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libar-acdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libar-acdb.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libar-gpr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libar-gpr.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/libar-gsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libar-gsl.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/libar-pal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libar-pal.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libats.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libats.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_log_utils.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatching.so \
@@ -1309,9 +1315,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libbluetooth_audio_session_qti_2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_qti_2_1.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libbt-hidlclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-hidlclient.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcacertclient.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libcamera_scene.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_scene.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/libcamerapostproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamerapostproc.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libcamxexternalformatutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxexternalformatutils.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libcamxfacialfeatures.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfacialfeatures.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libcamxfdalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgo.so \
@@ -1335,18 +1343,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneapiclient.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneoplookup.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libcneqmiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneqmiutils.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib64/libcodec2_hidl@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_hidl@1.0.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib64/libcodec2_hidl@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_hidl@1.1.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib64/libcodec2_hidl@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_hidl@1.2.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib64/libcodec2_hidl_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_hidl_plugin.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib64/libcodec2_soft_ac4dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_ac4dec.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib64/libcodec2_soft_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_common.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib64/libcodec2_soft_ddpdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_soft_ddpdec.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib64/libcodec2_store_dolby.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_store_dolby.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib64/libcodec2_vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcodec2_vndk.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.qti.chinodeutils.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconfigdb.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcpion.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/libdapparamstorage.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdapparamstorage.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdataitems.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libdiagjni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiagjni.so \
@@ -1357,6 +1357,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libdisplayfeatureservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayfeatureservice.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayqos.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libdisplayskuutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayskuutils.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/libdlbdsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdlbdsservice.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/libdlbpreg.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdlbpreg.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpmqmihal.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libdpps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpps.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmfs.so \
@@ -1387,13 +1389,16 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libhdcpsrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcpsrm.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libhfp_pal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhfp_pal.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidltransport.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libhistogram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhistogram.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libhta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libipanat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipanat.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/libipebpsstriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipebpsstriping.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnihelper.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/libjpege.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpege.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libkaraokepal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkaraokepal.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libkcl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkcl.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libkernelmanager.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkernelmanager.so \
@@ -1433,9 +1438,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/lib64/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_wifihal.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblqe.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/liblx-ar_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblx-ar_util.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/liblx-osal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblx-osal.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libmapdata_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmapdata_api.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libmasc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmasc.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libmcs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmcs.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/libmctfengine_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmctfengine_stub.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libmediautils_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmediautils_vendor.so \
@@ -1481,6 +1488,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liboemcrypto.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libofflinelog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libofflinelog.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libopencv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopencv.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/libopestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libopestriping.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libops.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libpal_net_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpal_net_if.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libpalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpalclient.so \
@@ -1492,10 +1500,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfgluelayer.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libperfioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfioctl.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/libpiex.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpiex.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libprefapps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprefapps.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libprekill.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprekill.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libprocomp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprocomp.so \
-    vendor/xiaomi/creek/proprietary/vendor/lib64/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libq3dtools_adreno.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libqapesdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqapesdk.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libqc2audio_base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2audio_base.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libqc2audio_basecodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqc2audio_basecodec.so \
@@ -1614,11 +1622,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libsys_info_cache.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsys_info_cache.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysmon_cdsp_skel.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/libtfestriping.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtfestriping.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libtrustedapploader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrustedapploader.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtzdrmgenprov.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/libvideotxr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideotxr.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libvmmem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvmmem.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libvndfwk_detect_jni.qti_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvndfwk_detect_jni.qti_vendor.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwms.so \
@@ -1652,7 +1662,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/sensors.touch.detect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.touch.detect.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libasphere.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/soundfx/libdlbvol.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdlbvol.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/soundfx/libhwdap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libhwdap.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/soundfx/libmisoundfx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libmisoundfx.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/soundfx/libswgamedap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswgamedap.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/soundfx/libswvqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libswvqe.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.0.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.1.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.2.so \
@@ -1660,6 +1674,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.display.color@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.4.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.display.color@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.5.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@2.0-impl.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.dolby.hardware.dms@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.dolby.hardware.dms@2.0.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.libdpmctmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.libdpmctmgr.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.libdpmfdmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.libdpmfdmgr.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.libdpmframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.libdpmframework.so \
@@ -1680,6 +1696,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.qti.esepowermanager@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.esepowermanager@1.1.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.qti.gnss-V5-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss-V5-ndk.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.qti.gnss-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss-service.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.AGMIPC@1.0.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so \
@@ -1723,6 +1740,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.qti.hardware.limits@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.limits@1.1.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.qti.hardware.limits@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.limits@1.2.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.qti.hardware.mwqemadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.mwqemadapter@1.0.so \
+    vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.pal@1.0-impl.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.qti.hardware.pal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.pal@1.0.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.0.so \
     vendor/xiaomi/creek/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.2.so \
@@ -1822,17 +1840,11 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libStDrvInt \
-    libagm \
-    libar-gsl \
-    libar-pal \
     libfastcvopt \
     liblmthermallistner \
-    liblx-osal \
     libthermalclient \
     libtinyxml \
-    vendor.qti.hardware.AGMIPC@1.0-impl \
     vendor.qti.hardware.fm@1.0 \
-    vendor.qti.hardware.pal@1.0-impl \
     vendor.qti.hardware.qccsyshal@1.1 \
     CACertService \
     CneApp \
@@ -1840,6 +1852,7 @@ PRODUCT_PACKAGES += \
     TimeService \
     TrustZoneAccessService \
     TxPwrAdmin \
+    MiSound \
     uimgbaservice \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentYGoogleHEXAGON_WIDEBAND \
@@ -1908,6 +1921,7 @@ PRODUCT_PACKAGES += \
     manifest_non_qmaa.xml \
     manifest_non_qmaa_extn.xml \
     qms-saidl.xml \
+    vendor.dolby.hardware.dms.xml \
     vendor.qti.diag.hal.service.xml \
     vendor.qti.gnss-service.xml \
     vendor.qti.hardware.lights.service.xml \
@@ -1919,4 +1933,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
-    system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so
+    system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
+    vendor_lib64_libEGL_adreno_so \
+    vendor_lib64_libGLESv2_adreno_so \
+    vendor_lib64_libq3dtools_adreno_so
